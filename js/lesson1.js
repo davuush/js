@@ -1,4 +1,4 @@
-const drinks =  parseInt(prompt("Виберіть який напій будете: 1-кава 2-чай 3-сік"));
+const drinks =  parseInt(prompt("Виберіть який напій будете: 1-кава 2-чай 3-сік").trim());
 
 switch (drinks){
     case 1:
@@ -16,7 +16,7 @@ switch (drinks){
 }
 
 
-const days = parseInt(prompt("Виберіть любий день тижня: 1-Понеділок  2-Вівторок  3-Середа  4-Четвер  5-Пятниця  6-Субота  7-Неділя"));
+const days = parseInt(prompt("Виберіть любий день тижня: 1-Понеділок  2-Вівторок  3-Середа  4-Четвер  5-Пятниця  6-Субота  7-Неділя").trim());
 
 switch (days){
     case 1:
@@ -46,7 +46,7 @@ switch (days){
 }
 
 
-const month = parseInt(prompt("Введіть число під яким стоіть ваш забажаний місяць"));
+const month = parseInt(prompt("Введіть число під яким стоіть ваш забажаний місяць").trim());
 
 switch (month){
     case 1:
@@ -95,10 +95,10 @@ switch (color){
 
 
 
-const firstNumber = Number(prompt("Введіть перше число:"));
-const secondNumber = Number(prompt("Введіть друге число:"));
+const firstNumber = Number(prompt("Введіть перше число:").trim());
+const secondNumber = Number(prompt("Введіть друге число:").trim());
 
-const operator = prompt("Введіть оператор (+, -, *, /)").trim;
+const operator = prompt("Введіть оператор (+, -, *, /)").trim();
 
 let result;
 
