@@ -1,44 +1,127 @@
-const firstTextField = prompt("заповніть перше текстове поле");
-const secondTextField = prompt("заповніть друге текстове поле");
-if(firstTextField !== "" && secondTextField !== ""){
-    alert("усі поля заповненні");
-}else{
-    alert("не всі поля заповнені")
+const drinks =  parseInt(prompt("Виберіть який напій будете: 1-кава 2-чай 3-сік"));
+
+switch (drinks){
+    case 1:
+        alert("Ви обрали напій кава")
+        break;
+    case 2:
+        alert("Ви обрали напій чай")
+        break;
+    case 3:
+        alert("Ви обрали напій сік")
+        break;
+    default:
+        alert("Такого варіанту відповіді нема")
+        break;
 }
 
 
-const firstNumber = Number(prompt("Введіть перше число"));
-const secondNumber = Number(prompt("Введіть друге число"));
-const result = firstNumber + secondNumber
-if(result>10){
-    alert("Число більше 10");
-}else{
-    alert("Число менше 10");
+const days = parseInt(prompt("Виберіть любий день тижня: 1-Понеділок  2-Вівторок  3-Середа  4-Четвер  5-Пятниця  6-Субота  7-Неділя"));
+
+switch (days){
+    case 1:
+        alert("Ви обрали день Понеділок")
+        break;
+    case 2:
+        alert("Ви обрали день Вівторок")
+        break;
+    case 3:
+        alert("Ви обрали день Середа")
+        break;
+    case 4:
+        alert("Ви обрали день Четвер")
+        break;
+    case 5:
+        alert("Ви обрали день Пятниця")
+        break;
+    case 6:
+        alert("Ви обрали день Субота")
+        break;
+    case 7:
+        alert("Ви обрали напій Неділя")
+        break;
+    default:
+        alert("Такого варіанту відповіді нема")
+        break;
 }
 
 
-const jS = prompt("ведіть текст JavaScript")
-if(jS.includes("JavaScript")){
-    alert("Текст містить слово JavaScript");
-}else{
-    alert("Текст не містить слово JavaScript");
+const month = parseInt(prompt("Введіть число під яким стоіть ваш забажаний місяць"));
+
+switch (month){
+    case 1:
+    case 2:
+    case 12:
+        alert("Ваша пора року зима")
+        break;
+    case 3:
+    case 4:
+    case 5:
+        alert("Ваша пора року весна")
+        break;
+    case 6:
+    case 7:
+    case 8:
+        alert("Ваша пора року літо")
+        break;
+    case 9:
+    case 10:
+    case 11:
+        alert("Ваша пора року осінь")
+        break;
+    default:
+        alert("Ви не вибрали жодного місяця отже вам не вказано жодноі пори року");
+        break;
+}
+
+
+const color = prompt("Напишыть любий колір світлофора і ми вкажем ваші подальші діЇ").toLowerCase().trim();
+
+
+switch (color){
+    case "червоний":
+        alert("зупиніться")
+        break;
+    case "жовтий":
+        alert("очікуйте")
+        break;
+    case "зелений":
+        alert("проїзжайте")
+        break;
+    default:
+        alert("ви не написала жодного коліру який є у світлофорі")
+        break;
 }
 
 
 
-const diapazon = Number(prompt("Введіть ваше любе число"));
-if(10<diapazon && diapazon<20){
-    alert("число в діапазоні числа 10 та 20")
-}else{
-    alert("число не в діапазоні 10 та 20")
-}
+const firstNumber = Number(prompt("Введіть перше число:"));
+const secondNumber = Number(prompt("Введіть друге число:"));
 
+const operator = prompt("Введіть оператор (+, -, *, /)").trim;
 
-const name = prompt("Введіть ваше ім'я");
-const email = prompt("Введіть вашу пошту");
-const password = prompt("Введіть ваш пароль");
-if(name.length >3 && email.includes("@") && password.length >6){
-    alert("Перенаправлення на іншу сторінку")
-}else{
-    alert("Помилка: неправильне заповнення")
+let result;
+
+switch(operator){
+    case "+":
+        result = firstNumber + secondNumber
+        break;
+     case "-":
+        result = firstNumber - secondNumber;
+        break;
+    case "*":
+        result = firstNumber * secondNumber;
+        break;
+    case "/":
+        if (secondNumber === 0){
+            alert("ділення на ноль неможливе і неможна")
+        } else {
+            result = firstNumber / secondNumber
+        }
+        break;
+    default:
+        alert("ви не вказали потрібного оператора")
+        break;
+
 }
+    alert("Ваш результат:" + result)
