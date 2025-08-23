@@ -559,4 +559,135 @@
 //         alert("невірні данні")
 //     }
 // } while (true)
+//let i = 0;
+// while (i <= 10){
+//     console.log(i);
+//     i = i + 1;
+    
+// }
 
+// for (let q = 2 ; q <= 20 ; q += 2){
+//       if (q % 2 !== 0) {
+//         continue; 
+//   }
+//   console.log(q);
+  
+// }
+
+
+
+
+// const number = 7;
+// for(let s = 0; i <= 10; i+= 1){
+//     console.log(`${number * s}`);
+    
+// }
+
+
+
+
+// let fixedNumber = Number(prompt("введіть ваше число n"))
+// for(let l = 0 ; l < fixedNumber ; l += 1){
+//     if (l > fixedNumber){
+//         break
+//     }
+//     console.log(l);
+    
+// }
+
+
+
+// let d = 1
+// while(d <= 20){
+//     d = d + 1
+//           if (d % 3 === 0) {
+//         continue; 
+//   }
+//   console.log(d);
+  
+// }
+
+// const num = [[1,2,3],[4,5,6],[7,8,9]]
+// console.log(num[0][0]);
+// console.log(num[1][1]);
+
+// const numbers = [12, 47, 83, 59, 64, 28, 91, 36]
+
+// for(const q of numbers){
+//         console.log(q);
+//         if(q % 2 === 1){
+//                 console.log(q);
+//                 break
+//         }
+// }
+
+
+// const numbers = [-12, 47, 83, 59, -64, 28, 91, -36]
+// let sum = 0;
+// for(const q of numbers){
+//         if(q > 0){
+
+//                 sum += q 
+//         }
+// }
+// console.log(sum);
+
+
+// const cart = [12, 47, 83, 59, 64, 28, 91, 36, 75, 42, 88, 53];
+// cart[cart.length]=1000;
+// console.log(cart);
+
+// const numbers = [12, 47, 5, 88, 63, 29, 94, 31, 56, 72, 6, 18, 40, 67, 81, 25, 90, 14, 38, 53];
+// let minNumbers = numbers[0]
+// for (let i = 0; i < numbers.length ; i += 1){
+//     if(minNumbers > numbers[i]){
+//         minNumbers = numbers[i]
+//     }
+
+    
+// }
+//     console.log(minNumbers);
+
+
+
+
+// Напиши скрипт який рахує суму елементів двух масивів. Без методу concat()
+// const array1 = [5, 10, 15, 20];
+// const array2 = [10, 20, 30];
+
+// let sumArray = 0;
+// for (let i = 0; i < array1.length ; i += 1){
+
+//     sumArray += array1[i]
+    
+// }
+// for (let i = 0; i < array2.length ; i += 1){
+
+//     sumArray += array2[i]
+    
+// }
+//     console.log(sumArray);
+
+// const phones = ["0931234567","0671112233","0501234890","0991234765","0631112255","0971234111","0681234999","0931112200","0661234321","0951234654"];
+// for(let i = 0; i < phones.length; i += 1){
+
+//     console.log(phones[i].padStart(13, "+38"));
+    
+// }
+
+// const names = ["Олександр","Марія","Іван","Анастасія","Андрій","Олена","Дмитро","Катерина","Сергій","Юлія",];
+// for( let i = 0; i < names.length ; i += 1){
+//     if(names[i] === "Анастасія")
+//         console.log("анастасія під індексом".i);
+        
+    
+
+// }
+// const numbers = [12, 47, 5, 88, 63, 29, 94, 31, 56, 72, 6, 18, 40, 67, 81, 25, 90, 14, 38, 53];
+// for(let i = 0; i < numbers.length ; i += 1){
+//     console.log(numbers[i]);
+//     if(numbers[i] % 2 === 1){
+//       console.log(numbers[i] += 1000);
+
+//     }
+// }

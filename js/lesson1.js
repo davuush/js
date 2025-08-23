@@ -1,47 +1,66 @@
-let i = 0;
-while (i <= 10){
-    console.log(i);
-    i = i + 1;
+const numbers = [1, 12 , 33]
+numbers[1] = 10
+console.log(numbers);
+
+
+
+
+
+const strings = ["Привіт", "Масив", "Рядки"];
+strings[3] = "Чорний"
+console.log(strings);
+
+
+
+
+
+const numbersSumm = [3, 7, 12, 18, 30];  
+
+let summa = 0;
+
+for (let i = 0; i < numbersSumm.length; i += 1){
+    summa += numbersSumm[i]
+}
+console.log(summa);
+
+
+
+const masuv = [ 1 , 2 , 3 , 4 , 5];
+for( let i = 0;i < masuv.length; i += 1){
+    console.log(masuv[i]);
     
 }
 
-for (let q = 2 ; q <= 20 ; q += 2){
-      if (q % 2 !== 0) {
-        continue; 
-  }
-  console.log(q);
-  
-}
 
+const stringsSecond = ["Телефон", "JavaScript", "Духи", "Рядки", "Собака"];
 
+for( let i = 0;i < stringsSecond.length; i += 1){
+    if( stringsSecond[i].length > 6 ){
 
+    console.log(stringsSecond[i]);
 
-const number = 7;
-for(let s = 0; i <= 10; i+= 1){
-    console.log(`${number * s}`);
-    
-}
-
-
-
-
-let fixedNumber = Number(prompt("введіть ваше число n"))
-for(let l = 0 ; l < fixedNumber ; l += 1){
-    if (l > fixedNumber){
-        break
     }
-    console.log(l);
     
 }
 
 
 
-let d = 1
-while(d <= 20){
-    d = d + 1
-          if (d % 3 === 0) {
-        continue; 
-  }
-  console.log(d);
-  
+const chusla = [3, 7, 12, 18, 25, 30, 41, 56, 72, 89];
+
+let maxNumber = chusla[0];
+for( let i = 0;i < chusla.length; i += 1){
+    if(maxNumber < chusla[i]){
+    maxNumber = chusla[i]
+    };
+}
+console.log(maxNumber);
+
+
+
+const number = [3, 7, 12, 18, 25, 30, 41, 56, 72, 89];
+for( let i = 0;i < number.length; i += 1){
+    if(number[i] % 2 === 0){
+    console.log(number[i]);
+    
+    };
 }
