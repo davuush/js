@@ -189,3 +189,6 @@ cards.push(cardToInsert)
 console.log(cards);
 
 
+const cardToUpdate = "оновлена карточка 4";
+cards.splice(2,1,cardToUpdate)
+console.log(cards);
