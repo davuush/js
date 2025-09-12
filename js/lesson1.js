@@ -1,194 +1,181 @@
-// const mesag = "дозволяє перетворити рядок в масив, розбивши її по розподілу";
-// console.log(mesag.split(","));
-//  split перетворює рядок в масив\
-
-// const friends = ['Mango', 'Poly', 'Kiwi', 'Ajax'];
-// console.log(friends.join(", "));
-
-
-//Робимо slug з назви статті з URL адреси,
-// Заголовок статті складається тільки з букв та пропусків,
-// Нормалізуємо рядок,
-// Розбиваємо по словах,
-// Записуємо в рядок з роздільником,
-// Чейнінг
-// повинно получитися top-10-benefits-of-react-fremework
-//  const title = "Top 10 Benefits Of React Fremework";
-//  const result = title.toLowerCase().split(' ').join('-')
-//  console.log(result);
- 
-
-// const friends = ['Mango', 'Poly', 'Kiwi', 'Ajax'];
-// const findName = 'Poly';
-// const indexL = friends.indexOf(findName)
-// console.log(indexL);
-// const findName = 'Kiwi';
-// const indexL = friends.includes(findName);
-// console.log(indexL);
-
-
-
-// friends.unshift("ddd", 'ddd');
-// console.log(friends);
-// friends.push(false, 'array', 45);
-// console.log(friends);
-// friends.shift()
-// console.log(friends);
-// friends.pop()
-// console.log(friends);
-
-
-// метод slice(start,end) робить копію масива повністю якщо ми нічого не передаєм , а якщо передаємо йому start і  end то робить копіб масиву від start до end але не включно end;
-
-
-// const message = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto a recusandae, assumenda, expedita consectetur sequi distinctio magnam earum corrupti debitis quos iure tempora libero, repudiandae quasi explicabo non. Ad, aspernatur.'
-
-// const changes = message.slice(0,10);
-// console.log(changes);
-
-// const names = [
-//   "Олександр",
-//   "Марія",
-//   "Іван",
-//   "Анастасія",
-//   "Андрій",
-//   "Олена",
-//   "Дмитро",
-//   "Катерина",
-//   "Сергій",
-//   "Юлія",
-//   "Михайло",
-//   "Вікторія",
-//   "Богдан",
-//   "Тетяна",
-//   "Артур"
-// ];
-
-
-
-// const names3 = names.slice(3,7)
-// console.log(names3);
-
-// const names2 = names;
-// names2.push('Артем','Руслан')
-// console.log(names);
-// console.log(names2);
-// console.log(names2 === names);
-
-
-
-// const copyNames = names.slice()
-// copyNames.push('Давид')
-// console.log(names);
-// console.log(copyNames);
-// console.log(copyNames === names);
-
-
-// const numbers = [ 1 , 2 ,3 ,4, 5]
-// const otherNumbers = [6,7,8,9,10]
-// const lastNumbers = [11,12,13,14,15]
-
-// const result1 = lastNumbers.concat(otherNumbers,numbers)
-// console.log((result1).sort());
-
-// const result = numbers.concat(otherNumbers,lastNumbers)
-// console.log(result);
-
-
-
-//splice() Ззмінює оригінальний масив і може робити з ним шо ебудь
-    // const names = [
-    // "Олександр",
-    // "Марія",
-    // "Іван",
-    // "Анастасія",
-    // "Андрій",
-    // "Олена",
-    // "Дмитро",
-    // "Катерина",
-    // "Сергій",
-    // "Юлія",
-    // "Михайло",
-    // "Вікторія",
-    // "Богдан",
-    // "Тетяна",
-    // "Артур"
-    // ];
-//видалення елементів з масиву
-// const copyNames = names.slice();
-// const result = copyNames.splice(0,4)
-// console.log(result);
+// // const add = (a , b) => a + b;
+//  const add = (a,b) => {
+//     // const c = a + b 
+//     return a + b
+//  }
 
 
 
 
+// console.log(add(1,3 ));
+// const logPassword = (text) => console.log(text);
+
+
+// logPassword('qwerty123')
+
+
+// const fn = function () {
+//     console.log(arguments);
+    
+// }
+// fn(1,2,3,4,5,6,7,8)
+
+// const fs = (...args)  => {
+//     console.log(args);
+    
+// }
+// fs(1,2,3,4,5,6,7,8)
+
+// Напиши функцію logItems(array), яка отримує масив і використовує цикл for, який для кожного елемента масиву буде виводити в консоль повідомлення в форматі [номер елемента] - [значення елемента].
+// Нумерація повинна починатися з 1. Наприклад, для першого елемента масиву ['Mango', 'Poly', 'Ajax'] з індексом 0 буде виведено '1 - Mango', а для індексу 2 виведе '3 - Ajax'.
+
+// const logItems = array => {
+//     // console.log(array);
+//     for(let i = 0; i < array.length;i += 1){
+//         console.log(`${i + 1} = ${array[i]}`);
+        
+//     }
+// }
+// logItems(['Mango', 'Poly', 'Ajax'])
+
+// Напиши скрипт підрахунку вартості гравіювання прикрас. Для цього створи функцію calculateEngravingPrice(message, pricePerWord) приймаючу рядок (в рядку будуть тільки слова і прогалини) і ціну гравіювання одного слова, і повертає ціну гравіювання всіх слів в рядку.
+
+// const calculateEngravingPrice = (message, pricePerWord) => {
+//     // console.log(message);
+//     // console.log(pricePerWord);
+// const string = message.split(" ")
+// const result = string.length * pricePerWord
+// console.log(string);
+
+// }
+// calculateEngravingPrice('Напиши скрипт підрахунку вартості гравіювання прикрас', 10)
 
 
 
-
-//додавання елементів д масиву
-
-// copyNames.splice(12 , 0 , "Ігор")
-// console.log(copyNames);
+// Напиши функцію findLongestWord(string), яка приймає параметром довільний рядок (в рядку будуть тільки слова і прогалини) і повертає найдовше слово в цьому рядку.
 
 
-//замінити 
+// const findLongestWord = string => {
+// const longestWord =  string.split(" ")
+//     let word = longestWord[0]
+//     for(let i = 0;i < longestWord.length; i += 1){
+//         if(word.length < longestWord[i].length){
+//             word = longestWord[i]
+//         }
+        
+//     }
 
-// copyNames.splice(5,1,"Катерина")
-// console.log(copyNames);
+//     console.log(word);
+    
+// }
+// findLongestWord("яка приймає параметром довільний рядок")
 
 
+//Напиши функцію logItems(array), яка отримує масив і використовує цикл for, який для кожного елемента масиву буде виводити в консоль повідомлення в форматі [номер елемента] - [значення елемента].Нумерація повинна починатися з 1. Наприклад, для першого елемента масиву ['Mango', 'Poly', 'Ajax'] з індексом 0 буде виведено '1 - Mango', а для індексу 2 виведе '3 - Ajax'.
 
 
-
-
-
-const friends = ['Mango', 'Poly', 'Kiwi', 'Ajax'];
-
-
-let string = "";
-
-for (let i = 0; i < friends.length; i += 1) {
-  string += friends[i];
-
-  if (i < friends.length -1) {
-    string += ",";
-  }
+function logItems(array){
+    // console.log(array);
+    for(let i = 0; i < array.length; i += 1){
+        console.log(`${i + 1} - ${array[i]}`);
+        
+    }
 }
+logItems(['Mango', 'Poly', 'Ajax'])
 
-console.log(string);
+//Напиши скрипт підрахунку вартості гравіювання прикрас. Для цього створи функцію calculateEngravingPrice(message, pricePerWord) приймаючу рядок (в рядку будуть тільки слова і прогалини) і ціну гравіювання одного слова, і повертає ціну гравіювання всіх слів в рядку.
 
+function calculateEngravingPrice(message, pricePerWord){
+    // console.log(message);
+    // console.log(pricePerWord);
+const add = message.split(" ").length
+console.log(add);
+return `ціна гравіювання з ${add} слів буде складати ${add * pricePerWord} коштів`
+}
+console.log(calculateEngravingPrice("i love Js and Css", 100));
 
+//Напиши функцію findLongestWord(string), яка приймає параметром довільний рядок (в рядку будуть тільки слова і прогалини) і повертає найдовше слово в цьому рядку.
 
-
-const friend = ['Mango', 'Poly', 'Kiwi', 'Ajax'];
-console.log(friend.join(","));
-
-
-
-
-
-const cards = [
-    'Карточка-1',
-    'Карточка-2',
-    'Карточка-3',
-    'Карточка-4',
-    'Карточка-5',
-];
-
-
-const cardToRemove = 'Карточка-3';
-const index = cards.indexOf(cardToRemove)
-cards.splice(index, 1)
-console.log(cards);
-
-
-
-const cardToInsert = 'Карточка-6'
-cards.push(cardToInsert)
-console.log(cards);
+function findLongestWord(string){
+    // console.log(string);
+const longestWord = string.split(" ")
+// console.log(longestWord);
+let biggestWord = longestWord[0]
+for(let i = 0;i < longestWord.length; i += 1){
+    // console.log(longestWord[i]);
+    if(biggestWord.length < longestWord[i].length){
+        biggestWord= longestWord[i]
+    }
+}
+return biggestWord
+}
+console.log(findLongestWord("Lorem ipsum dolor sit amet consectetur adipisicing elit"));
 
 
-const cardToUpdate = "оновлена карточка 4";
-cards.splice(2,1,cardToUpdate)
-console.log(cards);
+
+
+//Напиши функцію formatString(string) яка приймає рядок і форматує його якщо необхідно.Якщо довжина рядка не перевищує 40 символів, функція повертає її в початковому вигляді.Якщо довжина більше 40 символів, то функція обрізає рядок до 40-ка символів і додає в кінець рядка три крапки '...', після чого повертає укорочену версію.
+
+function formatString(string){
+    if(string.length <= 40){
+        return string
+    }else{
+        return string.slice(0,41) + "..."
+    }
+    
+}
+const message = "Lorem ipsum dolor sit amet consectetur adipisicing elit"
+console.log(formatString(message));
+
+
+// Напиши функцію checkForSpam(message), приймаючу 1 параметр message — рядок. Функція перевіряє її на вміст слів spam і sale. Якщо знайшли заборонене слово, то функція повертає true, якщо заборонених слів немає функція повертає false. Слова в рядку можуть бути в довільному регістрі.
+
+function checkForSpam(message){
+    const lowerMessage = message.toLowerCase()
+// console.log(lowerMessage.includes("span"))
+// console.log(lowerMessage.includes("sale"));
+return lowerMessage.includes("span") || lowerMessage.includes("sale")
+}
+const str = "Lorem ipsum dolor Span sit amet consectetur adipisicing elit"
+console.log(checkForSpam(str));
+
+
+
+// Напиши скрипт з наступним функціоналом:
+
+// При завантаженні сторінки користувачеві пропонується в prompt ввести число. Введення зберігається в змінну input і додається в масив чисел numbers.
+// Операція введення числа користувачем і збереження в масив триває до тих пор, пір, поки користувач не натисне Cancel в prompt.
+// Після того як користувач припинив введення натиснувши Cancel, якщо масив не порожній, необхідно порахувати суму всіх елементів масиву і записати її в змінну total. Використовуй цикл for або for...of. Після чого в консоль виведи рядок 'Загальна сума чисел дорівнює [сума]'.
+
+// 🔔 Робити перевірку того, що користувач ввів саме число, а не довільний набір символів, не обов'язково. Якщо хочеш, в разі некоректного введення, показуй alert з текстом 'Було введено не число, попробуйте ще раз', при цьому результат promptзаписувати в масив чисел не потрібно, після чого знову користувачеві пропонується ввести число в prompt.
+
+
+let input;
+const numbers = [];
+
+
+
+while (true){
+    input = prompt("Введіть число")
+    if(input === null){
+        alert("ви вийшли із циклу")
+    break   
+    }
+    if(isNaN(input)){
+        alert("Введіть число")
+        continue
+    }
+
+    input = Number(input)
+    numbers.push(input)
+    
+
+}
+    if(numbers.length > 0){
+        let total = 0;
+        for (let i = 0; i < numbers.length; i+=1){
+            total += numbers[i]
+        }
+        console.log(`Загальна сума чисел дорівнює ${tota}`);
+        
+    }
